@@ -21,10 +21,13 @@ public class User {
 	@Column(name="email")
 	private String email;
 	
+	public User() {
+		
+	}
 	//id i removed bca we will be creating id incremental order
-	public User(String fisrtName, String lastName, String email) {
+	public User(String firstName, String lastName, String email) {
 		super();
-		this.firstName = fisrtName;
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
@@ -37,12 +40,12 @@ public class User {
 		this.id = id;
 	}
 
-	public String getFisrtName() {
+	public String getfirstName() {
 		return firstName;
 	}
 
-	public void setFisrtName(String fisrtName) {
-		this.firstName = fisrtName;
+	public void setfirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
@@ -63,7 +66,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", fisrtName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
 	
 	
